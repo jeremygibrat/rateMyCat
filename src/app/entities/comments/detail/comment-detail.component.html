@@ -1,0 +1,25 @@
+<h2>Comment</h2>
+@if (comment) {
+    <dl>
+        <dt>Note</dt>
+        <dd>{{ comment.note }}</dd>
+        
+        <dt>Text</dt>
+        <dd>{{ comment.text }}</dd>
+        
+        <dt>Created</dt>
+        <!-- <dd>{{ comment.created | formatMediumDatetime }}</dd> -->
+        
+        <dt>Modified</dt>
+        <!-- <dd>{{ comment.modified | formatMediumDatetime }}</dd> -->
+        
+        <dt>Cat</dt>
+        <dd>
+<!--             @if (comment.cat && cat) {
+            <div>
+                <a [routerLink]="['/cats', comment.cat, 'view']">{{ cat.name }}</a>
+            </div>
+            } -->
+        </dd>
+    </dl>
+  }

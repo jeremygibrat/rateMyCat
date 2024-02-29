@@ -1,0 +1,18 @@
+<h2>Cat detail</h2>
+
+@if (cat) {
+    <dl>
+        <dt>Name</dt>
+        <dd>{{ cat.name }}</dd>
+        <dt>Breed</dt>
+        <dd>{{ cat.breed }}</dd>
+        <dt>Description</dt>
+        <dd>{{ cat.description }}</dd>
+        <!--     <dt>Birthday</dt>
+        <dd>
+            {{ cat.birthday | formatMediumDatetime }}
+        </dd> -->
+        <dt>Avg Rating</dt>
+        <dd>{{ cat.avg_rating }}</dd>
+    </dl>
+}
